@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ozelia Tour - Открой мир с нами</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;600&amp;family=Manrope:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "#f8f9fa",
+                      "background": "#f8f9fa",
+                      "error": "#ba1a1a",
+                      "outline": "#757682",
+                      "on-primary-container": "#758dd5",
+                      "surface-container-high": "#e7e8e9",
+                      "error-container": "#ffdad6",
+                      "tertiary-container": "#422000",
+                      "primary-fixed": "#dbe1ff",
+                      "on-error-container": "#93000a",
+                      "primary-fixed-dim": "#b3c5ff",
+                      "primary-container": "#002366",
+                      "on-primary-fixed-variant": "#2a4386",
+                      "surface-dim": "#d9dadb",
+                      "tertiary-fixed-dim": "#ffb77d",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#6e3900",
+                      "secondary-container": "#fed65b",
+                      "inverse-surface": "#2e3132",
+                      "surface-container-low": "#f3f4f5",
+                      "surface-variant": "#e1e3e4",
+                      "on-secondary-fixed": "#241a00",
+                      "secondary-fixed-dim": "#e9c349",
+                      "on-background": "#191c1d",
+                      "inverse-primary": "#b3c5ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#00113a",
+                      "on-secondary-fixed-variant": "#574500",
+                      "on-surface-variant": "#444650",
+                      "on-tertiary-container": "#d97600",
+                      "outline-variant": "#c5c6d2",
+                      "on-surface": "#191c1d",
+                      "tertiary": "#240f00",
+                      "surface-tint": "#435b9f",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-primary-fixed": "#00174a",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#2f1500",
+                      "tertiary-fixed": "#ffdcc3",
+                      "surface": "#f8f9fa",
+                      "secondary-fixed": "#ffe088",
+                      "inverse-on-surface": "#f0f1f2",
+                      "surface-container": "#edeeef",
+                      "secondary": "#735c00",
+                      "on-secondary-container": "#745c00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "16px",
+                      "xl": "24px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Noto Serif"],
+                      "body": ["Inter"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #00113a, #002366);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #00113a 0%, #002366 100%);
+        }
+        .asymmetric-image {
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#00113a]/80 backdrop-blur-md">
+<nav class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="flex items-center gap-4">
+<div class="text-2xl font-serif font-bold text-[#00113a] dark:text-white uppercase tracking-tighter flex items-center gap-2">
+<img alt="Логотип Ozelia Tour" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAngwYrHpiFv6GuWoDVnDVQ54l6BDCSaXmESQa9kbpUKK8cT2M5XawvvYIx31CPKa3wcmNA62EXQxJ0QIvMIk87yL9ZWgaLdCaEEV1xwLJHGWdVQB1Mv9xF9rIxl41qiOocZl90UV6pmC1y5DeNykReSkgy2Hhr1Qj9ep1ZgpRYiMEUzQO9gFi2HYE-S4r4kFZoOlLj6JyaAbiNyIvOflFUXixUndn7iN-wgZmTXXetWFa0IJc0GBK0irswuZJMbC-qOQrdai3inv0"/>
+                    Ozelia Tour
+                </div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#735c00] font-bold border-b-2 border-[#735c00] pb-1 font-serif text-lg tracking-wide" href="#">Направления</a>
+<a class="text-[#00113a] dark:text-[#f8f9fa] hover:text-[#735c00] transition-colors font-serif text-lg tracking-wide" href="#tours">Туры</a>
+<a class="text-[#00113a] dark:text-[#f8f9fa] hover:text-[#735c00] transition-colors font-serif text-lg tracking-wide" href="#benefits">О нас</a>
+<a class="text-[#00113a] dark:text-[#f8f9fa] hover:text-[#735c00] transition-colors font-serif text-lg tracking-wide" href="#reviews">Отзывы</a>
+<a class="text-[#00113a] dark:text-[#f8f9fa] hover:text-[#735c00] transition-colors font-serif text-lg tracking-wide" href="#contacts">Контакты</a>
+</div>
+<a href="./index.html">
+    
+<button class="primary-gradient text-white px-8 py-2.5 rounded-full font-label text-sm uppercase tracking-widest hover:opacity-80 transition-all duration-300 active:scale-95">
+                UZ
+            </button>
+            
+</a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img alt="роскошная пляжная вилла на закате" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaAaFm-m_xlz5IZwInS5PseEFDZJyAd_tDAzISbjcZL1ldIw2vl5dKbRJ40WVv0WqRM8tfBItHRFyoe5h9ScelO4vheWeFfu5BAZp1ylLUzXNFJPm1f1eKUxZa_ePmGXrSd3O9AsQQC8NEa-ejOpRhZKXnrcigjVcaYWJZ83bZYUKqkedGloH8h2nYIkku_BGezbW8oRikRJ-ggfkTiywNmfCJAYOahaM5OmHIC6qWWQPgrdOSR_UYuTzb43bS2Irx6YLKWuI959Q"/>
+</div>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<h1 class="font-headline text-5xl md:text-8xl text-white mb-6 leading-tight">
+                Открой мир с <span class="text-secondary-fixed">Ozelia Tour</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-surface-bright/90 mb-10 font-light tracking-wide">
+                Туры от $300 — Мальдивы, Вьетнам, Турция, Таиланд
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="primary-gradient text-white px-10 py-4 rounded-full font-label text-md uppercase tracking-widest hover:shadow-[0_0_20px_rgba(115,92,0,0.4)] transition-all flex items-center justify-center gap-2" href="#tours">
+                    Подобрать тур
+                </a>
+<a class="glass-card text-primary px-10 py-4 rounded-full font-label text-md uppercase tracking-widest hover:bg-white transition-all flex items-center justify-center gap-2" href="https://t.me/ozeliatour">
+                    Написать в Telegram
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-24 bg-surface px-6 overflow-hidden" id="benefits">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="p-8 bg-surface-container-lowest rounded-xl group hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:text-secondary-fixed transition-colors">payments</span>
+<h3 class="font-headline text-2xl mb-4 text-primary group-hover:text-white transition-colors">Доступные цены</h3>
+<p class="text-on-surface-variant group-hover:text-surface-variant transition-colors">Лучшие предложения напрямую от проверенных операторов и отелей.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl group hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:text-secondary-fixed transition-colors">travel_explore</span>
+<h3 class="font-headline text-2xl mb-4 text-primary group-hover:text-white transition-colors">Полный пакет</h3>
+<p class="text-on-surface-variant group-hover:text-surface-variant transition-colors">Перелет, проживание, питание, трансфер и страховка включены в стоимость.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl group hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:text-secondary-fixed transition-colors">support_agent</span>
+<h3 class="font-headline text-2xl mb-4 text-primary group-hover:text-white transition-colors">Поддержка 24/7</h3>
+<p class="text-on-surface-variant group-hover:text-surface-variant transition-colors">Ваш персональный консьерж на связи в любой точке мира в любое время.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl group hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 group-hover:text-secondary-fixed transition-colors">bolt</span>
+<h3 class="font-headline text-2xl mb-4 text-primary group-hover:text-white transition-colors">Быстрое оформление</h3>
+<p class="text-on-surface-variant group-hover:text-surface-variant transition-colors">Минимальный пакет документов и бронирование в течение 15 минут.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Tours Section -->
+<section class="py-24 bg-surface-container-low px-6" id="tours">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-sm">Эксклюзивные предложения</span>
+<h2 class="font-headline text-4xl md:text-6xl text-primary mt-4">Популярные направления</h2>
+</div>
+<div class="text-on-surface-variant max-w-md font-light">
+                    Мы отобрали лучшие курорты мира, чтобы ваш отдых был по-настоящему безупречным и запоминающимся.
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Maldives Card -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+<div class="h-64 overflow-hidden relative">
+<img alt="Мальдивские острова с высоты птичьего полета" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlhB4Es9fxQwsYowmMAIzWxWMVz7xGN1GZVoMqvgKGtk_8JdWJS_KXBNuEjzCO5CQGvA9NksWfIKdz9kLH5-wBPZBtTgA9NI-h4DlEdFyjWmPlQ2eyKMuW3Lp9uSlbuQrIUeaDNtjQcg2LbsY99blpwmsXBjuNjppGrsZeR6deSIPFkKa8wxpce6YH2G7Aaun9F_2_ezxf3I8CTO7v2yxO6cFHcM05-MzYIEQLgR37elfjEQ_ejAKaHMbDy-aegD6Fx0oMUYn6Els"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-4 py-1 rounded-full font-label text-sm">от $300</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl text-primary mb-4">Мальдивы</h3>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Перелет и трансфер</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Отель 5 звезд</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Питание Все включено</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Страховка</li>
+</ul>
+
+</div>
+</div>
+<!-- Vietnam Card -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+<div class="h-64 overflow-hidden relative">
+<img alt="живописная бухта Халонг во Вьетнаме" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPWR3BRlTnnaOo5RPTmrGM_-dK8LRlubSn4_lP8-hsuQWhDXJtl8ygaHWb9hWcQoZQpSzQVIUqEzR_rr47x9AqSj0xt9zYMwICctDylCsoEy7orxuVUs9b1_x62yIwzLV0XYLANJlVLkSaIDJTbRDyGFSLxTJV8is0iOd0SUp9p07_QzCARxllTXgNaYYQ3H29sBWGgGj4BTE0Wqe3E6CmAAZCG1w4_Gx6o93pHsaXd-Mx7tFO7ou1dGCO3QGOX08kAgAVY7gyvZs"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-4 py-1 rounded-full font-label text-sm">от $300</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl text-primary mb-4">Вьетнам</h3>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Прямой рейс</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Пляжные отели</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Завтраки включены</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Экскурсия</li>
+</ul>
+
+</div>
+</div>
+<!-- Turkey Card -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+<div class="h-64 overflow-hidden relative">
+<img alt="собор Святой Софии в Стамбуле" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://blog.ostrovok.ru/wp-content/uploads/2025/02/13%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-1.jpg"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-4 py-1 rounded-full font-label text-sm">от $300</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl text-primary mb-4">Турция</h3>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Ультра все включено</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Вип-трансфер</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Семейные отели</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Спа-услуги</li>
+</ul>
+
+</div>
+</div>
+<!-- Thailand Card -->
+<div class="group relative bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl">
+<div class="h-64 overflow-hidden relative">
+<img alt="тайский храм в тропиках" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://static.tildacdn.com/tild3932-3638-4366-b465-333264336139/photo.jpg"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-4 py-1 rounded-full font-label text-sm">от $300</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline text-2xl text-primary mb-4">Таиланд</h3>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Островной отдых</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Вилла у моря</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Пакет для дайвинга</li>
+<li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-sm">done</span> Трансфер на катере</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Bento Grid -->
+<section class="py-24 bg-surface px-6">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl text-center text-primary mb-16 italic">Мгновения ваших путешествий</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+<div class="col-span-2 row-span-2 relative overflow-hidden rounded-xl">
+<img alt="безмятежный пляж с пальмами" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI8tLYZ-0dzO_LFiSieMuwDhjiybli-lcd7rzD9xnuSY2c6x_sHXG2q7sbHM-eAPzol-JFvXCfsv_goJ_NFMet4rPAQTTwmmTsdhMm0Mf3_0tnS52pBCB0QwCcja6w8U1psSNc-z3k05loYQpMG0J1d6leIPoGy7x2YaSqDPBWJGrxl7CRdcx463Hc9CSjVEUWbvuMyWDAER7-PNyQ58Ir-bOTJg9d9GXHNaJvQBBcQhi7Lt2Ku0qS_gNMLEL99klp1Qt6duVI-DI"/>
+</div>
+<div class="relative overflow-hidden rounded-xl">
+<img alt="путешественник в горах на закате" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://www.ataberkestate.com/sites/default/files/styles/930/public/2025-07/a-2.jpg?itok=3MAmoAv2"/>
+</div>
+<div class="relative overflow-hidden rounded-xl">
+<img alt="лодка в чистом голубом озере" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://bm.ge/uploads/files/2024/05/30/248634/tailand_w_h.jpeg"/>
+</div>
+<div class="col-span-2 relative overflow-hidden rounded-xl">
+<img alt="Эйфелева башня в Париже" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" src="https://fasttur.ru/assets/images/danang/bana-golden.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-24 bg-primary text-white overflow-hidden relative" id="reviews">
+
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<h2 class="font-headline text-4xl text-center mb-16">Наши счастливые туристы</h2>
+<div class="flex overflow-x-auto gap-8 pb-12 snap-x no-scrollbar">
+<div class="min-w-[320px] md:min-w-[400px] snap-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/10">
+<div class="flex gap-1 text-secondary-fixed mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body italic text-lg mb-8 leading-relaxed">"Ozelia Tour организовали нам незабываемый медовый месяц на Мальдивах. Все было на высшем уровне — от перелета до виллы. Спасибо за заботу 24/7!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">АС</div>
+<div>
+<div class="font-headline text-lg">Алишер Саидов</div>
+<div class="text-secondary-fixed text-sm">Тур на Мальдивы</div>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] snap-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/10">
+<div class="flex gap-1 text-secondary-fixed mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body italic text-lg mb-8 leading-relaxed">"Второй раз летим с Ozelia во Вьетнам. Цены всегда радуют, а менеджеры помогают с любым вопросом за минуты. Рекомендую всем знакомым!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">МК</div>
+<div>
+<div class="font-headline text-lg">Марина Ким</div>
+<div class="text-secondary-fixed text-sm">Тур во Вьетнам</div>
+</div>
+</div>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] snap-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/10">
+<div class="flex gap-1 text-secondary-fixed mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body italic text-lg mb-8 leading-relaxed">"Отдых в Турции прошел идеально. Отель подобрали именно под наши пожелания. Трансфер был очень комфортным, спасибо за сервис!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">БК</div>
+<div>
+<div class="font-headline text-lg">Баходир Кадыров</div>
+<div class="text-secondary-fixed text-sm">Тур в Турцию</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f3f4f5] dark:bg-[#00113a] w-full py-12 px-8 mt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-serif text-[#00113a] dark:text-white uppercase font-bold tracking-tighter">Ozelia Tour</div>
+<p class="text-[#444650] dark:text-slate-400 font-sans text-sm tracking-normal max-w-xs">
+                    Курируем ваши путешествия. Ваш комфорт — наша главная цель и вдохновение.
+                </p>
+</div>
+
+<div class="space-y-6">
+<span class="font-label font-bold text-primary uppercase text-xs tracking-widest block mb-2">Контакты</span>
+<div class="text-[#00113a] dark:text-[#f8f9fa] font-sans text-sm">
+                    Ташкент, ул. Амира Темура, 44<br/>
+                    +998 90 322 55 44
+                </div>
+<div class="flex gap-4">
+<a class="text-[#444650] dark:text-slate-400 hover:text-[#735c00] transition-colors text-xs font-sans" href="https://t.me/ozeliastoreadmin">Telegram</a>
+<a class="text-[#444650] dark:text-slate-400 hover:text-[#735c00] transition-colors text-xs font-sans" href="#">Instagram</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline-variant/20 text-center">
+<p class="text-[#444650] dark:text-slate-400 font-sans text-sm opacity-60">
+                © 2026 Ozelia Tour. Организуем ваше путешествие.
+            </p>
+</div>
+</footer>
+</body></html>
